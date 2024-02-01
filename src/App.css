@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.body{
+    width: 100%;
+  
+}
+.body .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 45%;
+    margin-left:450px;
+    padding: 10px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body .content .title h1{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    text-shadow: 2px 1px 1px rgb(8, 8, 8);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body .content .details{
+   margin-top: 10px;
+   margin-bottom: 10px;
+background-image: url('https://i.gifer.com/embedded/download/76Yw.gif');
+   margin-left: 100px;
+   padding: 10px;
+   width: 800px;
+   border-radius: 50px;
+}
+.body .content .details .response{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.body .content .details .form{
+    display: flex;
+    flex-direction:column;
+}
+.body .content .details .form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.body .content .details .form .button{
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+}
+h5{
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media (max-width:450px){
+    .body{
+        padding: 20px;
+    }
+    .body .content{
+        padding: 10px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .body .content .title h1{
+        font-size: 18px;
+    }
+    .body .content .details{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: white;
+        margin-left: 10px;
+        padding: 5px;
+        border-radius: 50px;
+        width: 500px;
+     }
+     .body .content .details .response .before h5,.body .content .details .response .after h5{
+        font-size: 15px;
+     }
+     .result h3{
+        font-weight: 300;
+     }
+    }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
